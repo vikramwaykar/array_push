@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="todo.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="" height="50px">
+        </div>
+        <div class="menus">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </header>
+    <div class="addTodo">
+        <input type="text" class="taskInput" id="inputTask" >
+        <button onclick="addTask()"> Add Task</button>
+    </div>
+    <div class="taskList">
+        <div class="list" id="listItems">
+
+            <div class="taskItem">
+                
+                    <h1>Hello DreamsGuider</h1>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+    }
+
+    header {
+        width: 100%;
+        height: 70px;
+        background-color: #212121;
+        color: white;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .menus {
+        width: 40%;
+    }
+
+    .menus ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+
+    }
+
+
+    .addTodo {
+        height: 40vh;
+        /* background-color: #767575; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .addTodo input {
+        width: 40vw;
+        height: 50px;
+        border-radius: 5px;
+        padding-left: 30px;
+        background-color: #96959583;
+        font-size: 20px;
+
+    }
+
+    .addTodo button {
+        width: 8vw;
+        height: 50px;
+        border: none;
+        background-color: #212121;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        border-radius: 5px;
+    }
+
+    .taskList {
+        width: 100%;
+        height: 60vh;
+        /* background-color: #6f6f6f; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: scroll;
+    }
+
+    .list {
+        width: 60%;
+        height: 100%;
+        /* background-color: white; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+    .taskItem {
+        height: 100px;
+        width: 100%;
+        background-color: #212121;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        border-radius: 8px;
+    }
+
+    .listItems{
+        height: fit-content;
+        
+    }
+</style>
+
+
+</html>
